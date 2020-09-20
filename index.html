@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>College Library</title>
+  </head>
+  <body>
+      <div class="container my-3">
+        <h2>College Library</h2>
+        <form id="libraryForm">
+            <div class="form-group row my-5">
+              <label for="regnb" class="col-sm-2 col-form-label">Registration Number</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" id="regnb" placeholder="Enter Registration Number">
+              </div>
+            </div>
+            <div class="form-group row my-3">
+                <label for="bookNumber" class="col-sm-2 col-form-label">Book Number</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="bookNumber" placeholder="Enter Book Number">
+                </div>
+              </div>
+            <fieldset class="form-group">
+              <div class="row my-5">
+                <legend class="col-form-label col-sm-2 pt-0">Department</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="type" id="cse" value="CSE" checked>
+                    <label class="form-check-label" for="cse">
+                      CSE
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="type" id="ece" value="ECE" checked>
+                    <label class="form-check-label" for="ece">
+                      ECE
+                    </label>
+                  </div><div class="form-check">
+                    <input class="form-check-input" type="radio" name="type" id="eee" value="EEE" checked>
+                    <label class="form-check-label" for="eee">
+                      EEE
+                    </label>
+                  </div><div class="form-check">
+                    <input class="form-check-input" type="radio" name="type" id="eie" value="EIE" checked>
+                    <label class="form-check-label" for="eie">
+                      EIE
+                    </label>
+                  </div><div class="form-check">
+                    <input class="form-check-input" type="radio" name="type" id="ce" value="CE" checked>
+                    <label class="form-check-label" for="ce">
+                       CE
+                    </label>
+                  </div><div class="form-check">
+                    <input class="form-check-input" type="radio" name="type" id="me" value="ME" checked>
+                    <label class="form-check-label" for="me">
+                       ME
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="type" id="bsms" value="BSMS">
+                    <label class="form-check-label" for="bsms">
+                       BSMS
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <div class="form-group row my-5">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Add Book</button>
+              </div>
+            </div>
+          </form>
+          <div id="table">
+              <h3>Books Registered</h3>
+            <table class="table table-striped my-5">
+                <thead>
+                  <tr>
+                    <th scope="col">Registration Number</th>
+                    <th scope="col">Book Number</th>
+                    <th scope="col">Department</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+              </table>
+          </div>
+      
+      </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="indexes6.js"></script>
+  </body>
+</html>
